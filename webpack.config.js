@@ -22,6 +22,7 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin([
+      { from: 'src/server.js', to: '../../server.js' },
       { from: 'src/public/index.html', to: '../index.html' },
       { from: 'src/public/index.css', to: '../css/index.css' },
       { from: 'src/public/favicon.ico', to: '../favicon.ico' }
