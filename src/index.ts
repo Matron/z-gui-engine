@@ -3,6 +3,7 @@ import { SocketEventsService } from './socket/socket-event.service';
 
 export class Main {
     constructor() {
+        console.log(process.env.GAME_ENGINE_URL);
         let url = process.env.GAME_ENGINE_URL || 'http://localhost:3001';
         let socketService = new SocketService(url);
         socketService.createSocket();
