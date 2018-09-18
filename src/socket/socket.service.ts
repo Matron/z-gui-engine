@@ -12,7 +12,7 @@ export class SocketService {
     createSocket() {
         try {
             this.socket  = io(this.url);
-            util.log(`Connected to socket: ${this.url}`);
+            util.log(`Connecting to socket: ${this.url}`);
         } catch (error) {
             util.error(`Error connecting to socket: ${this.url}`);
             throw error;
